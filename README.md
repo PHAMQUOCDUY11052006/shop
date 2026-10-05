@@ -18,11 +18,3 @@ Spring Boot 3 + Thymeleaf + Spring Data JPA + SQL Server.
 
 ## Demo đổi trạng thái
 Dùng các câu UPDATE trong `sql/setup.sql`, rồi F5 trang `/orders`.
-
-## Đẩy lên GitHub
-    git init
-    git add .
-    git commit -m "Gio hang, COD, lich su don hang"
-    git branch -M main
-    git remote add origin <link-repo>
-    git push -u origin main
