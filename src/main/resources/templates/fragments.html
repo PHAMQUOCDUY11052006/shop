@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav th:fragment="navbar" class="navbar navbar-expand navbar-dark bg-dark mb-4">
+	<div class="container">
+		<a class="navbar-brand" th:href="@{/products}">Shop</a>
+		<div class="navbar-nav">
+			<a class="nav-link" th:href="@{/products}">Sản phẩm</a>
+			<a class="nav-link" th:href="@{/cart}">Giỏ hàng</a>
+			<a class="nav-link" th:href="@{/orders}">Đơn hàng của tôi</a>
+		</div>
+	</div>
+</nav>
+<div th:fragment="messages">
+	<div class="alert alert-success" th:if="${success}" th:text="${success}"></div>
+	<div class="alert alert-danger" th:if="${error}" th:text="${error}"></div>
+</div>
+</body>
+</html>
